@@ -14,8 +14,6 @@ import fn4authen_app2
 
 st.session_state.username = st.session_state.username
 
-# conn = st.connection('gcs', type=FilesConnection)
-
 # Initialize connection.
 st.write("Welcom to my app")
 
