@@ -1,7 +1,7 @@
 # To run this app, open a terminal and run the following commands:
 # pip install gcsfs (not needed with the below method; but there is another method that use gcsfs library)
 import streamlit as st
-import fn4authen_app2
+#import fn4authen_app2
 # from fn4authen_app import check_password
 # check_password()
 
