@@ -20,7 +20,7 @@ conn = st.connection('mysql', type='sql')
 df = conn.query('SELECT * from hw01;', ttl=0)
 
 # Get the username from the session state
-# username = st.session_state.get("username", none)
+username = st.session_state.get("username", "aembaye")
 if "username" in st.session_state:
     username = st.session_state["username"]
 else:
