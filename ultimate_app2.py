@@ -5,8 +5,8 @@ import fn4authen_app2
 # from fn4authen_app import check_password
 # check_password()
 
-st.session_state.username = st.session_state.username
-
+#st.session_state.username = st.session_state.username
+username="aembaye"
 # Initialize connection.
 st.write("Welcom to my app")
 
