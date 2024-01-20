@@ -87,10 +87,7 @@ st-files-connection @ git+https://github.com/streamlit/files-connection.git@4cff
 statsmodels==0.14.1
 streamlit==1.30.0
 streamlit-authenticator==0.2.3
-# Editable install with no version control (streamlit-custom-component==0.0.1)
--e c:\users\aembaye\onedrive - university of arkansas\c2-embaye\rh\learn\_python\myprojects\mycomp4\template
 streamlit-drawable-canvas==0.9.3
-streamlit-drawable4testing @ file:///C:/Users/aembaye/streamlit-drawable4testing-1.0.0
 streamlit-option-menu==0.3.6
 tenacity==8.2.3
 toml==0.10.2
