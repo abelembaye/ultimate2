@@ -4,7 +4,7 @@ import streamlit as st
 # pip install gcsfs (not needed with the below method; but there is another method that use gcsfs library)
 # import gcsfs
 # import mysql.connector
-import pandas as pd
+#import pandas as pd
 from sqlalchemy.sql import text # pip install SQLAlchemy
 import sys
 import os
