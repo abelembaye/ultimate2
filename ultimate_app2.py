@@ -1,7 +1,7 @@
 # To run this app, open a terminal and run the following commands:
 # pip install gcsfs (not needed with the below method; but there is another method that use gcsfs library)
 import streamlit as st
-from st_files_connection import FilesConnection
+# from st_files_connection import FilesConnection
 # pip install gcsfs (not needed with the below method; but there is another method that use gcsfs library)
 # import gcsfs
 # import mysql.connector
