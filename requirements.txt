@@ -1,0 +1,4 @@
+﻿streamlit
+pillow
+#streamlit-drawable-canvas
+git+https://github.com/abelembaye/streamlit-drawable4testing.git
