@@ -1,2 +1,3 @@
 streamlit
 SQLAlchemy
+git+ https://github.com/streamlit/files-connection
