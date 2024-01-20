@@ -1,13 +1,13 @@
 # To run this app, open a terminal and run the following commands:
 # pip install gcsfs (not needed with the below method; but there is another method that use gcsfs library)
 import streamlit as st
-#from st_files_connection import FilesConnection
 # pip install gcsfs (not needed with the below method; but there is another method that use gcsfs library)
 # import gcsfs
-import mysql.connector
+# import mysql.connector
 import pandas as pd
-# from sqlalchemy import text  # pip install SQLAlchemy
-from sqlalchemy.sql import text
+from sqlalchemy.sql import text # pip install SQLAlchemy
+import sys
+import os
 import fn4authen_app2
 # from fn4authen_app import check_password
 # check_password()
