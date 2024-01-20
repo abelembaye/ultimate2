@@ -19,9 +19,6 @@ conn = st.connection('mysql', type='sql')
 # Perform initial query.
 df = conn.query('SELECT * from hw01;', ttl=0)
 
-# Print initial fetching results:
-# st.write(df)
-
 # Get the username from the session state
 # username = st.session_state.get("username", none)
 if "username" in st.session_state:
