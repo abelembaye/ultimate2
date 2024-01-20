@@ -1,3 +1,4 @@
 streamlit
 SQLAlchemy
-git+ https://github.com/streamlit/files-connection
+# git+ https://github.com/streamlit/files-connection
+mysqlclient
