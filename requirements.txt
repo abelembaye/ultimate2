@@ -1,6 +1,5 @@
 # requirements.txt
-mysql pkg-config
-mysqlclient
+mysqlclient=2.2.1
 SQLAlchemy
 
 
