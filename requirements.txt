@@ -1,7 +1,6 @@
 # requirements.txt
-streamlit >= 1.28
-#mysqlclient
-#SQLAlchemy
+mysqlclient
+SQLAlchemy
 
 
 
