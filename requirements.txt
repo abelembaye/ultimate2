@@ -1,6 +1,6 @@
 # requirements.txt
 mysqlclient=2.2.1
-SQLAlchemy
+SQLAlchemy=2.0.25
 
 
 
