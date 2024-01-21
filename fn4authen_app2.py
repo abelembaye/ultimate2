@@ -8,48 +8,45 @@ import hmac  # pip install hmac
 import streamlit as st
 
 
-def check_password():
-    """Returns `True` if the user had a correct password."""
+class Authenticator:
+    def __init__(self, df):
+        self.df = df
 
-    def login_form():
+    def login_form(self):
         """Form with widgets to collect user information"""
         with st.form("Credentials"):
             st.text_input("Username without @uark.edu", key="username")
             st.text_input("Access code", type="password", key="password")
-            st.form_submit_button("Log in", on_click=password_entered)
+            st.form_submit_button("Log in", on_click=self.password_entered)
 
-    def password_entered():
+    def password_entered(self):
         """Checks whether a password entered by the user is correct."""
         username_lower = st.session_state["username"].lower()
-        if username_lower in (user.lower() for user in st.secrets["passwords"]) and hmac.compare_digest(
-            st.session_state["password"],
-            st.secrets.passwords[username_lower],
-        ):
+        user_row = self.df[self.df['username'].str.lower() == username_lower]
+        if not user_row.empty and user_row['password'].values[0] == st.session_state["password"]:
             st.session_state["password_correct"] = True
-            # Don't store the username or password.
-            # del st.session_state["username"]
             del st.session_state["password"]
-
         else:
             st.session_state["password_correct"] = False
 
-    if st.session_state.get("password_correct", False):
-        # Print the session state
-        # st.write(f"Session state in check_password: {st.session_state}")
-        return True
+    def check_password(self):
+        """Returns `True` if the user had a correct password."""
+        if st.session_state.get("password_correct", False):
+            return True
 
-    # Show inputs for username + password.
-    login_form()
-    if "password_correct" in st.session_state:
-        st.error("😕 User not known or password incorrect")
-    return False
+        # Show inputs for username + password.
+        self.login_form()
+        if "password_correct" in st.session_state:
+            st.error("😕 User not known or password incorrect")
+        return False
 
 
-if not check_password():
-    st.stop()
+# if not Authenticator():
+#     st.stop()
 
 # Print the session state
 # st.write(f"Session state after check_password: {st.session_state}")
 # Main Streamlit app starts here
 # st.write("Here goes your normal Streamlit app...")
 # st.button("Click me")
+
