@@ -1,8 +1,3 @@
-# Authenticator app; in streamlit the .streamlit/secrets.toml file must be entered manually in the cloud envt; username must be unique
-# toml file can have sections and can store different secrets for different apps or parts of apps
-# secret file or database are part of backend
-# See more detail at:
-# https://docs.streamlit.io/knowledge-base/deploy/authentication-without-sso
 
 import hmac  # pip install hmac
 import streamlit as st
@@ -41,12 +36,4 @@ class Authenticator:
         return False
 
 
-# if not Authenticator():
-#     st.stop()
-
-# Print the session state
-# st.write(f"Session state after check_password: {st.session_state}")
-# Main Streamlit app starts here
-# st.write("Here goes your normal Streamlit app...")
-# st.button("Click me")
 
