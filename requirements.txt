@@ -1,4 +1,5 @@
 # requirements.txt
 streamlit
+PyMySQL
 SQLAlchemy
 mysqlclient
