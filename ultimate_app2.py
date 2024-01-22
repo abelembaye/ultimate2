@@ -1,7 +1,7 @@
 import streamlit as st
-import mysqlclient
-import pymysql
-pymysql.install_as_MySQLdb()
+# import mysqlclient
+# import pymysql
+# pymysql.install_as_MySQLdb()
 
 conn = st.connection('mysql', type='sql')
 
