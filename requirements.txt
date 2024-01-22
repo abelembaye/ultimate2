@@ -1,3 +1,4 @@
 # requirements.txt
 streamlit
-SQLAlchemy==1.4
+SQLAlchemy
+mysqlclient
