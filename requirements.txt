@@ -1,5 +1,6 @@
 # requirements.txt
 streamlit
-PyMySQL
+# PyMySQL
 SQLAlchemy
-mysqlclient
+# mysqlclient
+mysql-python
