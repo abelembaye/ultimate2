@@ -2,5 +2,5 @@
 streamlit
 # PyMySQL
 SQLAlchemy
-# mysqlclient
-mysql-python
+mysqlclient < 1.4
+# mysql-python
